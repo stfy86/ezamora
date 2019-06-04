@@ -64,5 +64,14 @@ var hr = document.createElement("hr");
 document.querySelector("#seccionPrincipal").append(hr);
 
 
-
+/// obtenemos elementos a partir de su classname
+var divAzul = document.getElementsByClassName("azul");
+console.log("DIVS AZULES");
+console.log(divAzul);
+// modificar el color de fondo de todos los div azules
+for (let elem in divAzul) {
+    if (divAzul[elem].className == 'azul') {
+        divAzul[elem].style.background = 'yellow';
+    }
+}
 
